@@ -153,7 +153,7 @@ func buildCols(keys []int, commits map[int]int) map[int]column {
 func printCells(cols map[int]column) {
 	printMonths()
 
-	for j := 6; j >= 0; j-- {
+	for j := 5; j >= 0; j-- {
 		for i := weeksInLastSixMonths + 1; i >= 0; i-- {
 			if i == weeksInLastSixMonths+1 {
 				printDayCol(j)
